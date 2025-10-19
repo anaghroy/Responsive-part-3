@@ -24,6 +24,8 @@ main {
   width: 100%;
   background-color: #0a0a0b;
   /*Navbar starts here*/
+  /*Explore section*/
+  /*Meta Timeline section*/
 }
 main nav {
   display: flex;
@@ -54,9 +56,14 @@ main .explorer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  background-image: url(./Images/metaverse-background.svg);
-  background-position: center;
-  background-size: cover;
+}
+main .explorer img {
+  position: relative;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 main .explorer .content {
   width: 50%;
@@ -65,41 +72,55 @@ main .explorer .content {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  background-image: url(./Images/metaverse-center-background.svg);
-  background-position: center;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  padding: 2rem 2rem;
+}
+main .explorer .content img {
+  position: absolute;
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  margin-top: -80%;
 }
 main .explorer .content figure {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 20%;
+  margin-top: -75%;
   /*Logo*/
 }
 main .explorer .content figure img {
-  width: 62%;
+  width: 40%;
   aspect-ratio: 1/1;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
 }
-main .explorer .content h1 {
+main .explorer .content .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: -60%;
+}
+main .explorer .content .content h1 {
   font-family: bold-font;
   color: #000;
-  font-size: 2.5rem;
+  font-size: 3.8rem;
   text-align: center;
 }
-main .explorer .content p {
+main .explorer .content .content p {
   font-family: light-font;
   color: #000;
   font-size: 1.5rem;
   text-align: center;
 }
-main .explorer .content .btn {
+main .explorer .content .content .btn {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -109,17 +130,177 @@ main .explorer .content .btn {
   color: #fff;
   cursor: pointer;
 }
-main .explorer .content .btn button {
+main .explorer .content .content .btn button {
   background-color: #000;
   border: none;
   font-size: 1rem;
   color: #fff;
+}
+main .new {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .new img {
+  width: 70%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  margin-top: 50%;
+}
+main .new .new-content {
+  position: absolute;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  margin-top: -85%;
+}
+main .new .new-content span {
+  border-radius: 1rem;
+  color: #fff;
+  background-color: transparent;
+  font-size: 1rem;
+  border: 0.1rem solid #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 5rem;
+}
+main .new .new-content h2 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 3.5rem;
+  text-align: center;
+}
+main .new .new-content p {
+  color: #fff;
+  opacity: 0.7;
+  font-family: light-font;
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .new img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: relative;
+  margin-top: -20%;
+}
+main .new figure {
+  width: 50%;
+}
+main .new figure img {
+  width: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  position: absolute;
+  margin-top: -60%;
+  margin-left: -5%;
+}
+main .meta {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+main .meta .main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .meta .main .part-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .meta .main .part-1 span {
+  color: #fff;
+  opacity: 0.7;
+}
+main .meta .main .part-1 h1 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+main .meta .main .part-1 p {
+  color: #fff;
+  opacity: 0.5;
+}
+main .meta .main .part-1 .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "grid-1 grid-2" "grid-3 grid-4";
+  gap: 2rem;
+}
+main .meta .main .part-1 .grid .grid-1 {
+  grid-area: grid-1;
+}
+main .meta .main .part-1 .grid .grid-1 h6 {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2;
+}
+main .meta .main .part-1 .grid .grid-2 {
+  grid-area: grid-2;
+}
+main .meta .main .part-1 .grid .grid-2 h6 {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2;
+}
+main .meta .main .part-1 .grid .grid-3 {
+  grid-area: grid-3;
+}
+main .meta .main .part-1 .grid .grid-3 h6 {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2;
+}
+main .meta .main .part-1 .grid .grid-4 {
+  grid-area: grid-4;
+}
+main .meta .main .part-1 .grid .grid-4 h6 {
+  font-size: 1rem;
+  color: #fff;
+  line-height: 2;
+}
+main .meta .main .part-1 .bottom {
+  font-size: 1rem;
+  color: #fff;
+  opacity: 1;
+}
+main .meta .main .part-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main .meta .main .part-2 figure {
+  width: 100%;
+}
+main .meta .main .part-2 figure img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 /********** Responsive Section **********/
 @media (min-width: 1000px) {
   main {
     /*Navbar section starts here*/
+    /*Meta Timeline section*/
   }
   main nav {
     justify-content: space-between;
@@ -128,5 +309,257 @@ main .explorer .content .btn button {
     font-size: 1rem;
     border-radius: 0.4rem;
     gap: 0.3rem;
+  }
+  main .meta {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 2rem;
+  }
+  main .meta .main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  main .meta .main .part-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .meta .main .part-1 span {
+    color: #fff;
+    opacity: 0.7;
+  }
+  main .meta .main .part-1 h1 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  main .meta .main .part-1 p {
+    color: #fff;
+    opacity: 0.5;
+  }
+  main .meta .main .part-1 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "grid-1 grid-2" "grid-3 grid-4";
+    gap: 2rem;
+  }
+  main .meta .main .part-1 .grid .grid-1 {
+    grid-area: grid-1;
+  }
+  main .meta .main .part-1 .grid .grid-1 h6 {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2;
+  }
+  main .meta .main .part-1 .grid .grid-2 {
+    grid-area: grid-2;
+  }
+  main .meta .main .part-1 .grid .grid-2 h6 {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2;
+  }
+  main .meta .main .part-1 .grid .grid-3 {
+    grid-area: grid-3;
+  }
+  main .meta .main .part-1 .grid .grid-3 h6 {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2;
+  }
+  main .meta .main .part-1 .grid .grid-4 {
+    grid-area: grid-4;
+  }
+  main .meta .main .part-1 .grid .grid-4 h6 {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 2;
+  }
+  main .meta .main .part-1 .bottom {
+    font-size: 1rem;
+    color: #fff;
+    opacity: 1;
+  }
+  main .meta .main .part-2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+  main .meta .main .part-2 figure {
+    width: 100%;
+  }
+  main .meta .main .part-2 figure img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    /*Explore section starts here*/
+    /*New section starts here*/
+  }
+  main .explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  main .explorer img {
+    position: relative;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-top: 10%;
+  }
+  main .explorer .content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  main .explorer .content img {
+    position: absolute;
+    width: 90%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    margin-top: -80%;
+  }
+  main .explorer .content figure {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    margin-top: -5070%;
+    /*Logo*/
+  }
+  main .explorer .content figure img {
+    width: 40%;
+    aspect-ratio: 1/1;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  main .explorer .content .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -40%;
+  }
+  main .explorer .content .content h1 {
+    font-family: bold-font;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+  }
+  main .explorer .content .content p {
+    font-family: light-font;
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+  }
+  main .explorer .content .content .btn {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: #000;
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  main .explorer .content .content .btn button {
+    background-color: #000;
+    border: none;
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  main .new {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  main .new img {
+    width: 70%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    position: absolute;
+    margin-top: 10%;
+  }
+  main .new .new-content {
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    margin-top: -50%;
+  }
+  main .new .new-content span {
+    border-radius: 1rem;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1rem;
+    border: 0.1rem solid #fff;
+    padding: 0.6rem 0.9rem;
+    border-radius: 5rem;
+  }
+  main .new .new-content h2 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .new .new-content p {
+    color: #fff;
+    opacity: 0.7;
+    font-family: light-font;
+    font-size: 1rem;
+    text-align: center;
+  }
+  main .new img {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    position: relative;
+  }
+  main .new figure {
+    width: 50%;
+  }
+  main .new figure img {
+    width: 60%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    position: absolute;
+    margin-top: -55%;
+    margin-left: -5%;
   }
 }/*# sourceMappingURL=style.css.map */
