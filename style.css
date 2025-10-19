@@ -27,7 +27,8 @@ main {
   /*Explore section*/
   /*Meta Timeline section*/
   /*Profile Board section*/
-  /*Socail graph section*/
+  /*Social graph section*/
+  /*light Protocol section*/
 }
 main nav {
   display: flex;
@@ -355,9 +356,147 @@ main .social .part-1 .graph p {
   font-size: 1rem;
   opacity: 0.7;
   line-height: 1.5;
+  font-family: light-font;
 }
 main .social .part-1 figure img {
   width: 100%;
+}
+main .light {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+main .light .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+main .light .content span {
+  color: #fff;
+  opacity: 0.7;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+main .light .content h6 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 3rem;
+}
+main .light .content .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "part-1 part-2 part-3" "part-1 part-2 part-4" "part-1 part-2 part-4" "part-1 part-2 part-4";
+  gap: 1rem;
+}
+main .light .content .grid .part-1 {
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+  grid-area: part-1;
+  background-color: rgba(40, 40, 40, 0.216);
+}
+main .light .content .grid .part-1 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+main .light .content .grid .part-1 .text span {
+  color: #fff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+main .light .content .grid .part-1 .text h3 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 2rem;
+}
+main .light .content .grid .part-1 .text figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .light .content .grid .part-1 .text figure img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .light .content .grid .part-2 {
+  grid-area: part-2;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+  background-color: rgba(40, 40, 40, 0.216);
+}
+main .light .content .grid .part-2 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+main .light .content .grid .part-2 .text span {
+  color: #fff;
+  opacity: 0.7;
+  text-transform: uppercase;
+}
+main .light .content .grid .part-2 .text h3 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 2rem;
+}
+main .light .content .grid .part-2 .text figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .light .content .grid .part-2 .text figure img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .light .content .grid .part-3 {
+  grid-area: part-3;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+  background-color: rgba(40, 40, 40, 0.216);
+}
+main .light .content .grid .part-3 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+main .light .content .grid .part-3 .text span {
+  color: #fff;
+  opacity: 0.7;
+}
+main .light .content .grid .part-3 .text h3 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 2rem;
+}
+main .light .content .grid .part-4 {
+  grid-area: part-4;
+  border-radius: 1rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+  background-color: rgba(40, 40, 40, 0.216);
+}
+main .light .content .grid .part-4 .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+main .light .content .grid .part-4 .text span {
+  color: #fff;
+  opacity: 0.7;
+}
+main .light .content .grid .part-4 .text h3 {
+  color: #fff;
+  font-family: bold-font;
+  font-size: 2rem;
 }
 
 /********** Responsive Section **********/
@@ -545,6 +684,7 @@ main .social .part-1 figure img {
   main {
     /*Explore section starts here*/
     /*New section starts here*/
+    /*light Protocol section*/
   }
   main .explorer {
     display: flex;
@@ -703,5 +843,145 @@ main .social .part-1 figure img {
     position: absolute;
     margin-top: -55%;
     margin-left: -5%;
+  }
+  main .light {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  main .light .content {
+    display: flex;
+    flex-direction: column;
+  }
+  main .light .content span {
+    color: #fff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  main .light .content h6 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 2rem;
+    padding: 0rem 0.5rem 0.8rem 0rem;
+  }
+  main .light .content .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "part-1" "part-2" "part-3" "part-4";
+    gap: 1rem;
+  }
+  main .light .content .grid .part-1 {
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+    grid-area: part-1;
+    background-color: rgba(40, 40, 40, 0.216);
+  }
+  main .light .content .grid .part-1 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+  main .light .content .grid .part-1 .text span {
+    color: #fff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  main .light .content .grid .part-1 .text h3 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 1rem;
+  }
+  main .light .content .grid .part-1 .text figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main .light .content .grid .part-1 .text figure img {
+    width: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .light .content .grid .part-2 {
+    grid-area: part-2;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+    background-color: rgba(40, 40, 40, 0.216);
+  }
+  main .light .content .grid .part-2 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+  main .light .content .grid .part-2 .text span {
+    color: #fff;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  main .light .content .grid .part-2 .text h3 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 1rem;
+  }
+  main .light .content .grid .part-2 .text figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  main .light .content .grid .part-2 .text figure img {
+    width: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .light .content .grid .part-3 {
+    grid-area: part-3;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+    background-color: rgba(40, 40, 40, 0.216);
+  }
+  main .light .content .grid .part-3 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+  main .light .content .grid .part-3 .text span {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+  main .light .content .grid .part-3 .text h3 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 1rem;
+  }
+  main .light .content .grid .part-4 {
+    grid-area: part-4;
+    border-radius: 1rem;
+    border: 0.1rem solid rgba(255, 255, 255, 0.1764705882);
+    background-color: rgba(40, 40, 40, 0.216);
+  }
+  main .light .content .grid .part-4 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 2rem;
+  }
+  main .light .content .grid .part-4 .text span {
+    color: #fff;
+    opacity: 0.7;
+    font-size: 0.8rem;
+  }
+  main .light .content .grid .part-4 .text h3 {
+    color: #fff;
+    font-family: bold-font;
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */

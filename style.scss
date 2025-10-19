@@ -330,7 +330,7 @@ main {
       }
     }
   }
-  /*Socail graph section*/
+  /*Social graph section*/
   .social {
     width: 100%;
     display: flex;
@@ -357,11 +357,153 @@ main {
           font-size: 1rem;
           opacity: 0.7;
           line-height: 1.5;
+          font-family: light-font;
         }
       }
       figure {
         img {
           width: 100%;
+        }
+      }
+    }
+  }
+  /*light Protocol section*/
+  .light {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 2rem 2rem;
+      span {
+        color: #fff;
+        opacity: 0.7;
+        text-transform: uppercase;
+        font-size: 1rem;
+      }
+      h6 {
+        color: #fff;
+        font-family: bold-font;
+        font-size: 3rem;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+          "part-1 part-2 part-3"
+          "part-1 part-2 part-4"
+          "part-1 part-2 part-4"
+          "part-1 part-2 part-4";
+        gap: 1rem;
+
+        .part-1 {
+          border-radius: 1rem;
+          border: 0.1rem solid #ffffff2d;
+          grid-area: part-1;
+          background-color: rgba(40, 40, 40, 0.216);
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 2rem;
+            span {
+              color: #fff;
+              opacity: 0.7;
+              text-transform: uppercase;
+            }
+            h3 {
+              color: #fff;
+              font-family: bold-font;
+              font-size: 2rem;
+            }
+            figure {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              img {
+                width: 80%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .part-2 {
+          grid-area: part-2;
+          border-radius: 1rem;
+          border: 0.1rem solid #ffffff2d;
+          background-color: rgba(40, 40, 40, 0.216);
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 2rem;
+            span {
+              color: #fff;
+              opacity: 0.7;
+              text-transform: uppercase;
+            }
+            h3 {
+              color: #fff;
+              font-family: bold-font;
+              font-size: 2rem;
+            }
+            figure {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              width: 100%;
+              img {
+                width: 80%;
+                object-fit: cover;
+              }
+            }
+          }
+        }
+        .part-3 {
+          grid-area: part-3;
+          border-radius: 1rem;
+          border: 0.1rem solid #ffffff2d;
+          background-color: rgba(40, 40, 40, 0.216);
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 2rem;
+            span {
+              color: #fff;
+              opacity: 0.7;
+            }
+            h3 {
+              color: #fff;
+              font-family: bold-font;
+              font-size: 2rem;
+            }
+          }
+        }
+        .part-4 {
+          grid-area: part-4;
+          border-radius: 1rem;
+          border: 0.1rem solid #ffffff2d;
+          background-color: rgba(40, 40, 40, 0.216);
+          .text {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 2rem;
+            span {
+              color: #fff;
+              opacity: 0.7;
+            }
+            h3 {
+              color: #fff;
+              font-family: bold-font;
+              font-size: 2rem;
+            }
+          }
         }
       }
     }
@@ -714,6 +856,152 @@ main {
           position: absolute;
           margin-top: -55%;
           margin-left: -5%;
+        }
+      }
+    }
+    /*light Protocol section*/
+    .light {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .content {
+        display: flex;
+        flex-direction: column;
+        // gap: 0.5rem;
+        
+        span {
+          color: #fff;
+          opacity: 0.7;
+          text-transform: uppercase;
+          font-size: 1rem;
+          padding: 1rem;
+        }
+        h6 {
+          color: #fff;
+          font-family: bold-font;
+          font-size: 2rem;
+         padding: 0rem 0.5rem 0.8rem 0rem;
+        }
+        .grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-areas:
+            "part-1"
+            "part-2"
+            "part-3"
+            "part-4";
+          gap: 1rem;
+
+          .part-1 {
+            border-radius: 1rem;
+            border: 0.1rem solid #ffffff2d;
+            grid-area: part-1;
+            background-color: rgba(40, 40, 40, 0.216);
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              padding: 2rem 2rem;
+              span {
+                color: #fff;
+                opacity: 0.7;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+              }
+              h3 {
+                color: #fff;
+                font-family: bold-font;
+                font-size: 1rem;
+              }
+              figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                img {
+                  width: 80%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .part-2 {
+            grid-area: part-2;
+            border-radius: 1rem;
+            border: 0.1rem solid #ffffff2d;
+            background-color: rgba(40, 40, 40, 0.216);
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              padding: 2rem 2rem;
+              span {
+                color: #fff;
+                opacity: 0.7;
+                text-transform: uppercase;
+                font-size: 0.8rem;
+              }
+              h3 {
+                color: #fff;
+                font-family: bold-font;
+                font-size: 1rem;
+              }
+              figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                img {
+                  width: 80%;
+                  object-fit: cover;
+                }
+              }
+            }
+          }
+          .part-3 {
+            grid-area: part-3;
+            border-radius: 1rem;
+            border: 0.1rem solid #ffffff2d;
+            background-color: rgba(40, 40, 40, 0.216);
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              padding: 2rem 2rem;
+              span {
+                color: #fff;
+                opacity: 0.7;
+                font-size: 0.8rem;
+              }
+              h3 {
+                color: #fff;
+                font-family: bold-font;
+                font-size: 1rem;
+              }
+            }
+          }
+          .part-4 {
+            grid-area: part-4;
+            border-radius: 1rem;
+            border: 0.1rem solid #ffffff2d;
+            background-color: rgba(40, 40, 40, 0.216);
+            .text {
+              display: flex;
+              flex-direction: column;
+              gap: 1rem;
+              padding: 2rem 2rem;
+              span {
+                color: #fff;
+                opacity: 0.7;
+                font-size: 0.8rem;
+              }
+              h3 {
+                color: #fff;
+                font-family: bold-font;
+                font-size: 1rem;
+              }
+            }
+          }
         }
       }
     }
