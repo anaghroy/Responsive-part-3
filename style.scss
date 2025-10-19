@@ -301,26 +301,63 @@ main {
     flex-direction: column;
     padding: 1rem 1rem;
     .part-1 {
-      .profile{
+      .profile {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        h5{
+        h5 {
           color: #fff;
           text-transform: uppercase;
           font-family: light-font;
           font-size: 1rem;
           opacity: 0.7;
-          }
-          h1{
-            color: #fff;
-            font-size: 1.6rem;
-          }
-          p{
-            color: #fff;
-            font-size: 1rem;
-            opacity: 0.7;
-          }
+        }
+        h1 {
+          color: #fff;
+          font-size: 1.6rem;
+        }
+        p {
+          color: #fff;
+          font-size: 1rem;
+          opacity: 0.7;
+          line-height: 1.5;
+        }
+      }
+      figure {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+  /*Socail graph section*/
+  .social {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    .part-1 {
+      .graph {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        h5 {
+          color: #fff;
+          text-transform: uppercase;
+          font-family: light-font;
+          font-size: 1rem;
+          opacity: 0.7;
+        }
+        h1 {
+          color: #fff;
+          font-size: 1.6rem;
+        }
+        p {
+          color: #fff;
+          font-size: 1rem;
+          opacity: 0.7;
+          line-height: 1.5;
+        }
       }
       figure {
         img {
@@ -443,42 +480,86 @@ main {
     }
     /*Profile Board section*/
     .profile {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    padding: 1rem 1rem;
-    .part-1 {
+      width: 100%;
       display: flex;
-      flex-direction: row-reverse;
-      .profile{
+      flex-direction: row;
+      padding: 1rem 1rem;
+      .part-1 {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1rem;
-        h5{
-          color: #fff;
-          text-transform: uppercase;
-          font-family: light-font;
-          font-size: 1.5rem;
-          opacity: 0.7;
+        flex-direction: row-reverse;
+        .profile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          h5 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: light-font;
+            font-size: 1.5rem;
+            opacity: 0.7;
           }
-          h1{
+          h1 {
             color: #fff;
             font-size: 3rem;
           }
-          p{
+          p {
             color: #fff;
             font-size: 2rem;
             opacity: 0.7;
           }
-      }
-      figure {
-        img {
-          width: 100%;
+        }
+        figure {
+          img {
+            width: 100%;
+          }
         }
       }
     }
-  }
+    /*Social graph section*/
+    .social {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 1rem 1rem;
+      .part-1 {
+        display: flex;
+        flex-direction: row;
+        .graph {
+          width: 100%;
+          // background-color: red;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1rem;
+          h5 {
+            color: #fff;
+            text-transform: uppercase;
+            font-family: light-font;
+            font-size: 1.5rem;
+            opacity: 0.7;
+          }
+          h1 {
+            color: #fff;
+            font-size: 3rem;
+          }
+          p {
+            color: #fff;
+            font-size: 2rem;
+            opacity: 0.7;
+          }
+        }
+        figure {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img {
+            width: 90%;
+            // object-position: center;
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 600px) {
