@@ -1,0 +1,134 @@
+/*Font Family*/
+@font-face {
+  font-family: light-font;
+  src: url(./Fonts/Montserrat-Light.otf);
+}
+@font-face {
+  font-family: bold-font;
+  src: url(./Fonts/Montserrat-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: #0a0a0b;
+  /*Navbar starts here*/
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    .btn {
+      background-color: #fff;
+      color: #000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      border-radius: 0.3rem;
+      gap: 0.9rem;
+      padding: 0.8rem 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        font-family: light-font;
+      }
+    }
+  }
+  .explorer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(./Images/metaverse-background.svg);
+    background-position: center;
+    background-size: cover;
+
+    .content {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      background-image: url(./Images/metaverse-center-background.svg);
+      background-position: center;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding: 2rem 2rem;
+
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        /*Logo*/
+        img {
+          width: 62%;
+          aspect-ratio: 1/1;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      h1 {
+        font-family: bold-font;
+        color: #000;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+      p {
+        font-family: light-font;
+        color: #000;
+        font-size: 1.5rem;
+        text-align: center;
+      }
+      .btn {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        background-color: #000;
+        border-radius: 1rem;
+        padding: 1rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        button {
+          background-color: #000;
+          border: none;
+          font-size: 1rem;
+          color: #fff;
+        }
+        
+      }
+    }
+  }
+}
+
+/********** Responsive Section **********/
+
+@media (min-width: 1000px) {
+  main {
+    /*Navbar section starts here*/
+    nav {
+      justify-content: space-between;
+      .btn {
+        font-size: 1rem;
+        border-radius: 0.4rem;
+        gap: 0.3rem;
+      }
+    }
+  }
+}

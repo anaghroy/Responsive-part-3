@@ -1,0 +1,132 @@
+/*Font Family*/
+@font-face {
+  font-family: light-font;
+  src: url(./Fonts/Montserrat-Light.otf);
+}
+@font-face {
+  font-family: bold-font;
+  src: url(./Fonts/Montserrat-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  background-color: #0a0a0b;
+  /*Navbar starts here*/
+}
+main nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+main nav .btn {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.3rem;
+  gap: 0.9rem;
+  padding: 0.8rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+main nav .btn a {
+  text-decoration: none;
+  font-family: light-font;
+}
+main .explorer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: url(./Images/metaverse-background.svg);
+  background-position: center;
+  background-size: cover;
+}
+main .explorer .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url(./Images/metaverse-center-background.svg);
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  padding: 2rem 2rem;
+}
+main .explorer .content figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  /*Logo*/
+}
+main .explorer .content figure img {
+  width: 62%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .explorer .content h1 {
+  font-family: bold-font;
+  color: #000;
+  font-size: 2.5rem;
+  text-align: center;
+}
+main .explorer .content p {
+  font-family: light-font;
+  color: #000;
+  font-size: 1.5rem;
+  text-align: center;
+}
+main .explorer .content .btn {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  background-color: #000;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  cursor: pointer;
+}
+main .explorer .content .btn button {
+  background-color: #000;
+  border: none;
+  font-size: 1rem;
+  color: #fff;
+}
+
+/********** Responsive Section **********/
+@media (min-width: 1000px) {
+  main {
+    /*Navbar section starts here*/
+  }
+  main nav {
+    justify-content: space-between;
+  }
+  main nav .btn {
+    font-size: 1rem;
+    border-radius: 0.4rem;
+    gap: 0.3rem;
+  }
+}/*# sourceMappingURL=style.css.map */
